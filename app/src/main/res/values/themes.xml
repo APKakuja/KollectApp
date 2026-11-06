@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Kollect" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Color principal: marrón oscuro -->
+        <item name="colorPrimary">@color/brown_dark</item>
+        <item name="colorOnPrimary">@color/cream</item>
+
+        <!-- Color secundario: dorado -->
+        <item name="colorSecondary">@color/gold</item>
+        <item name="colorOnSecondary">@color/brown_dark</item>
+
+        <!-- Fondo general -->
+        <item name="android:colorBackground">@color/cream</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+
+        <!-- Cards, menús, diálogos... -->
+        <item name="colorSurface">@color/warm_white</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+
+        <!-- Errores -->
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/warm_white</item>
+
+        <!-- Barra de estado -->
+        <item name="android:statusBarColor">@color/brown_dark</item>
+        <item name="android:navigationBarColor">@color/cream</item>
+
+        <!-- Iconos de la status bar -->
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.Kollect" parent="Base.Theme.Kollect" />
+</resources>
