@@ -17,4 +17,8 @@
     <color name="text_secondary">#71645B</color>
     <!-- Estados -->
     <color name="error">#A8443A</color>
+
+    <!-- Tema oscuro -->
+    <color name="dark_background">#1F1814</color>
+    <color name="dark_surface">#2D231D</color>
 </resources>

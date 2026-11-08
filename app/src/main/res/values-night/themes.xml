@@ -1,7 +1,33 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Kollect" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Theme.Kollect" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <!-- Principal -->
+        <item name="colorPrimary">@color/gold_light</item>
+        <item name="colorOnPrimary">@color/brown_dark</item>
+
+        <!-- Secundario -->
+        <item name="colorSecondary">@color/gold</item>
+        <item name="colorOnSecondary">@color/brown_dark</item>
+
+        <!-- Fondo -->
+        <item name="android:colorBackground">@color/dark_background</item>
+        <item name="colorOnBackground">@color/cream</item>
+
+        <!-- Cards, diálogos, menús... -->
+        <item name="colorSurface">@color/dark_surface</item>
+        <item name="colorOnSurface">@color/cream</item>
+
+        <!-- Errores -->
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/warm_white</item>
+
+        <!-- Barras del sistema -->
+        <item name="android:statusBarColor">@color/dark_background</item>
+        <item name="android:navigationBarColor">@color/dark_background</item>
+
+        <!-- Iconos claros -->
+        <item name="android:windowLightStatusBar">false</item>
+
     </style>
 </resources>

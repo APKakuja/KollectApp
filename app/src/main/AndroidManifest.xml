@@ -21,15 +21,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ui.login.LoginActivity"
-            android:exported="false"
-            android:label="@string/title_activity_login"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".pantalles.CollectionProfileActivity"
-            android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".AppActivity" android:exported="false" />
+        <activity android:name=".CollectionActivity" android:exported="false" />
+        <activity android:name=".ObjectActivity" android:exported="false" />
     </application>
 
 </manifest>
