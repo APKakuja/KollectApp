@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
-import com.iticbcn.kollect.AppActivity
+import com.iticbcn.kollect.activities.AppActivity
 import com.iticbcn.kollect.R
 
 class LoginFragment : Fragment(R.layout.fragment_login) {

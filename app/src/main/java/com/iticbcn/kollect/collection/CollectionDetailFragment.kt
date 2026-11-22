@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
-import com.iticbcn.kollect.ObjectActivity
+import com.iticbcn.kollect.activities.ObjectActivity
 import com.iticbcn.kollect.R
 
 class CollectionDetailFragment : Fragment(R.layout.fragment_collection_detail) {

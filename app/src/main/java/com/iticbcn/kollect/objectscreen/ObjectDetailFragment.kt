@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import com.google.android.material.button.MaterialButton
-import com.iticbcn.kollect.ObjectActivity
+import com.iticbcn.kollect.activities.ObjectActivity
 import com.iticbcn.kollect.R
 
 class ObjectDetailFragment : Fragment(R.layout.fragment_object_detail) {

@@ -16,28 +16,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/object_details"
+            android:layout_gravity="center"
             android:textAppearance="?attr/textAppearanceHeadlineMedium" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:gravity="end"
             android:orientation="horizontal">
+
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/editObjectButton"
                 style="@style/Widget.Material3.Button.TextButton"
-                android:layout_width="wrap_content"
+                android:layout_width="185dp"
                 android:layout_height="wrap_content"
                 android:text="@string/edit_object" />
+
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/deleteObjectButton"
                 style="@style/Widget.Material3.Button.TextButton"
-                android:layout_width="wrap_content"
+                android:layout_width="185dp"
                 android:layout_height="wrap_content"
                 android:text="@string/delete_object" />
         </LinearLayout>
-
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="190dp"
@@ -53,14 +53,13 @@
                 android:scaleType="centerInside"
                 android:src="@drawable/playing_cards" />
         </com.google.android.material.card.MaterialCardView>
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:layout_gravity="center"
             android:text="@string/sample_object_name"
             android:textAppearance="?attr/textAppearanceTitleLarge" />
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -71,16 +70,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/object_category_card" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            >
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:baselineAligned="false"
                 android:orientation="vertical">
                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/object_release_year" android:textAppearance="?attr/textAppearanceLabelLarge" />
                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2005" />
@@ -94,7 +95,6 @@
                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2026" />
             </LinearLayout>
         </LinearLayout>
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -105,7 +105,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/object_condition_good" />
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

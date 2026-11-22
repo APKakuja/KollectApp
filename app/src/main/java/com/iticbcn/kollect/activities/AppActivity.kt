@@ -1,10 +1,11 @@
-package com.iticbcn.kollect
+package com.iticbcn.kollect.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
+import com.iticbcn.kollect.R
 import com.iticbcn.kollect.app.ProfileFragment
 import com.iticbcn.kollect.app.SearchFragment
 import com.iticbcn.kollect.app.SettingsFragment

@@ -1,0 +1,8 @@
+<resources>
+    <style name="Theme.Kollect.Splash" parent="Theme.Kollect">
+        <item name="android:windowBackground">@color/cream</item>
+        <item name="android:windowSplashScreenBackground">@color/cream</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/splash_logo_animated</item>
+        <item name="android:windowSplashScreenAnimationDuration">1000</item>
+    </style>
+</resources>
