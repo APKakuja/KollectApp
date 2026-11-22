@@ -7,6 +7,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.iticbcn.kollect.R
 import com.iticbcn.kollect.collection.CollectionDetailFragment
 import com.iticbcn.kollect.collection.CreateCollectionFragment
+import com.iticbcn.kollect.collection.EditCollectionFragment
 import com.iticbcn.kollect.databinding.ActivityCollectionBinding
 
 class CollectionActivity : AppCompatActivity() {
@@ -25,6 +26,10 @@ class CollectionActivity : AppCompatActivity() {
         if (savedInstanceState == null) {
             val initialFragment = if (intent.getBooleanExtra(EXTRA_CREATE, false)) {
                 CreateCollectionFragment()
+            } else if (intent.getBooleanExtra(EXTRA_EDIT, false)) {
+                EditCollectionFragment().apply {
+                    arguments = Bundle().apply { putString(ARG_COLLECTION_ID, id) }
+                }
             } else {
                 CollectionDetailFragment().apply {
                     arguments = Bundle().apply { putString(ARG_COLLECTION_ID, id) }
@@ -41,5 +46,6 @@ class CollectionActivity : AppCompatActivity() {
         const val EXTRA_COLLECTION_ID = "collectionId"
         const val ARG_COLLECTION_ID = "collectionId"
         const val EXTRA_CREATE = "createCollection"
+        const val EXTRA_EDIT = "editCollection"
     }
 }

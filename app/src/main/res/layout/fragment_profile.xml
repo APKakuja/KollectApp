@@ -20,11 +20,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:gravity="top|center_horizontal">
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/addCollectionCard"
-            android:layout_width="128dp"
-            android:layout_height="152dp"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
             android:clickable="true"
             android:focusable="true"
             android:foreground="?attr/selectableItemBackground"
@@ -42,40 +43,76 @@
                 android:textSize="42sp"
                 android:textStyle="bold" />
         </com.google.android.material.card.MaterialCardView>
+
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/vintageCardsCollection"
-            android:layout_width="128dp"
-            android:layout_height="152dp"
-            android:layout_marginStart="16dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?attr/selectableItemBackground"
-            android:contentDescription="@string/vintage_cards_collection"
+            android:id="@+id/profileCollectionCoverCard"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="12dp"
             app:cardBackgroundColor="@color/warm_white"
             app:cardCornerRadius="16dp"
             app:strokeColor="@color/beige"
             app:strokeWidth="1dp">
+            <ImageView
+                android:id="@+id/profileCollectionCover"
+                android:layout_width="112dp"
+                android:layout_height="112dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                android:src="@drawable/splash_logo" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/emptyCollectionGuide"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="-140dp"
+            app:cardBackgroundColor="@color/cream"
+            app:cardCornerRadius="16dp"
+            app:strokeColor="@color/gold"
+            app:strokeWidth="1dp">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center"
                 android:orientation="vertical"
                 android:padding="8dp">
-                <ImageView
+
+                <ImageButton
+                    android:id="@+id/closeEmptyCollectionGuide"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="end"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/close"
+                    android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="108dp"
-                    android:contentDescription="@string/vintage_cards_image"
-                    android:scaleType="centerInside"
-                    android:src="@drawable/playing_cards" />
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/add_first_collection"
+                    android:textAppearance="?attr/textAppearanceBodyMedium" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:maxLines="1"
-                    android:text="@string/vintage_cards_collection"
-                    android:textColor="@color/text_primary"
-                    android:textSize="12sp" />
+                    android:text="@string/BackArrow"
+                    android:textColor="@color/gold"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
     </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/collectionsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp" />
 </LinearLayout>

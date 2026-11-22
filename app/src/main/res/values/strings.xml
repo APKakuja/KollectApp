@@ -29,6 +29,15 @@
     <string name="settings">Ajustes</string>
     <string name="buscar">Buscar</string>
     <string name="perfil">Perfil</string>
+    <string name="close">Tancar</string>
+    <string name="add_first_object">Afegeix el primer objecte fent clic aquí</string>
+    <string name="add_first_collection">Crea la teva primera col·lecció fent clic aquí</string>
+    <string name="edit_collection">Editar</string>
+    <string name="delete_collection">Eliminar</string>
+    <string name="save_collection_changes">Guardar canvis</string>
+    <string name="theme_mode">Canviar tema</string>
+    <string name="light_theme">Tema clar</string>
+    <string name="dark_theme">Tema fosc</string>
     <string name="registreTittle">Registre</string>
     <string name="turnBack">← Tornar</string>
     <string name="object_details">Detalls de l\'objecte</string>
@@ -65,4 +74,6 @@
     <string name="sample_object_description">Carta vintage de la col·lecció de cartes clàssiques.</string>
     <string name="until">Fins:</string>
     <string name="from">Desde:</string>
+    <string name="BackArrow">←</string>
+    <string name="minus">-</string>
 </resources>

@@ -40,6 +40,7 @@ dependencies {
     implementation(libs.androidx.annotation)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintlayout)
+    implementation("androidx.recyclerview:recyclerview:1.4.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.livedata.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)

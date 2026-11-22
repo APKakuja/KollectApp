@@ -2,6 +2,7 @@ package com.iticbcn.kollect.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
@@ -10,6 +11,11 @@ import com.iticbcn.kollect.auth.LoginFragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        val preferences = getSharedPreferences(PREFERENCES_NAME, 0)
+        AppCompatDelegate.setDefaultNightMode(
+            if (preferences.getBoolean(DARK_MODE_KEY, false)) AppCompatDelegate.MODE_NIGHT_YES
+            else AppCompatDelegate.MODE_NIGHT_NO
+        )
         val splashScreen = installSplashScreen()
         val splashStartedAt = System.currentTimeMillis()
         splashScreen.setKeepOnScreenCondition {
@@ -34,5 +40,10 @@ class MainActivity : AppCompatActivity() {
             view.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+    }
+
+    companion object {
+        private const val PREFERENCES_NAME = "kollect_preferences"
+        private const val DARK_MODE_KEY = "dark_mode"
     }
 }
