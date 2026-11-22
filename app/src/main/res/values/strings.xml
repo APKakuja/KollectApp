@@ -27,6 +27,8 @@
     <string name="tancar_sessi">TANCAR SESSIÓ</string>
     <string name="prefer_ncies">Preferències</string>
     <string name="settings">Ajustes</string>
+    <string name="buscar">Buscar</string>
+    <string name="perfil">Perfil</string>
     <string name="registreTittle">Registre</string>
     <string name="turnBack">← Tornar</string>
     <string name="object_details">Detalls de l\'objecte</string>
@@ -61,4 +63,6 @@
     <string name="edit_object">EDITAR</string>
     <string name="delete_object">ELIMINAR</string>
     <string name="sample_object_description">Carta vintage de la col·lecció de cartes clàssiques.</string>
+    <string name="until">Fins:</string>
+    <string name="from">Desde:</string>
 </resources>
